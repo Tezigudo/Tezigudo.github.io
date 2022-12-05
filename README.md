@@ -1,4 +1,4 @@
-# Its me tezigudo
+# Its me Tezigudo
 
 This is my Portfolio Website
 
