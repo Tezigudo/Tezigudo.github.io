@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "A-OTF Futo Min A101 Pro Bold";
+  /* font-style: normal;
+        font-weight: 100 900;
+        font-display: swap; */
+  src: font-url("A-OTF-Futo-Min-A101-Pro-Bold.otf") format("opentype");
+}
