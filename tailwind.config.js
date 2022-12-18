@@ -47,7 +47,9 @@ module.exports = {
         '900': '#B07A4D'
       },
 
-
+      backgroundImage: {
+        'tearmat': "url('/image/tearmatt.jpg')"
+      }
     },
   },
   plugins: [
