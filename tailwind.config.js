@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'fontFamily': ['A-OTF Futo Min A101 Pro Bold', 'sans-serif']
+        'FutoMin': ['A-OTF Futo Min A101 Pro Bold', 'sans-serif'],
+        'KozMin': ['KozMinPro Bold', 'sans-serif'],
       },
       'torea-bay': {
         DEFAULT: '#171F99',
