@@ -50,7 +50,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'tearmat': "url('/image/tearmatt.jpg')"
+        'tearmat': "url('/src/assets/images/tearmatt.jpg')"
       }
     },
   },

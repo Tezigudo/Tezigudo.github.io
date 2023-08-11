@@ -1,16 +1,14 @@
 import React from 'react';
 
 import './App.css';
-import Navbar from './components/navbar/navbar';
+import Main from './pages/main';
 
 function App() {
-  const topic = ["Home", "About", "Contact"];
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <Navbar topics={topic} />
-      </header>
+    <div className='relative w-full h-screen bg-tearmat bg-no-repeat bg-cover bg-center bg-fixed overflow-auto'>
+      <div className='w-full h-full flex flex-col absolute backdrop-blur-md font-FutoMin overflow-auto'>
+      <Main/>
+    </div>
     </div>
   );
 }
