@@ -7,7 +7,7 @@ import Home from "../contents/Main/Home";
 import Project from "../contents/Main/Project";
 
 function Main() {
-  const topic = ["Home", "About", "Contact"];
+  const topic = ["Home", "About", "Project", "Contact"];
 
   return (
     <>
