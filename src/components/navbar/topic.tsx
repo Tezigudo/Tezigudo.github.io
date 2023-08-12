@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Topic(props: {topicName: string}){
     const {topicName} = props;
 

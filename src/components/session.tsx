@@ -1,4 +1,4 @@
-import SessionProps from "../../interfaces/Content";
+import SessionProps from "../interfaces/Content";
 
 function Session(props: SessionProps) {
   const { sessionName, content } = props;

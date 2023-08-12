@@ -1,6 +1,5 @@
-import React from "react";
 import Navbar from "../components/navbar/navbar";
-import Session from "../components/navbar/session";
+import Session from "../components/session";
 
 import About from "../contents/About";
 import Contact from "../contents/Contact";

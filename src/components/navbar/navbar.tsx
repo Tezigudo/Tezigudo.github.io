@@ -1,6 +1,5 @@
 import Topic from "./topic";
 
-
 function Navbar(prop: {topics: string[]}) {
     const topics = prop.topics;
     
