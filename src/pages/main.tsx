@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar/navbar";
 import Session from "../components/session";
 
-import About from "../contents/About";
-import Contact from "../contents/Contact";
-import Home from "../contents/Home";
-import Project from "../contents/Project";
+import About from "../contents/Main/About";
+import Contact from "../contents/Main/Contact";
+import Home from "../contents/Main/Home";
+import Project from "../contents/Main/Project";
 
 function Main() {
   const topic = ["Home", "About", "Contact"];
