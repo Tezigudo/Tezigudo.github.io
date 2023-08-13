@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}",
-    "*.{html,js}"],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -49,7 +50,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'tearmat': "url('/image/tearmatt.jpg')"
+        'tearmat': "url('/src/assets/images/tearmatt.jpg')"
       }
     },
   },
@@ -59,5 +60,4 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
     require('prettier-plugin-tailwindcss')],
-
 }
