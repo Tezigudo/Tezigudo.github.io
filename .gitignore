@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+node_modules
