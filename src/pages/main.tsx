@@ -19,8 +19,6 @@ function Main() {
       <Session sessionName="About" content={<About/>} />
       <Session sessionName="Project" content={<Project/>} />
       <Session sessionName="Contact" content={<Contact/>} />
-      
-
     </>
   );
 }

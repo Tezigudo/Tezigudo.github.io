@@ -19,7 +19,11 @@ function Project() {
         projectName: "WePay",
         description: "a web application for those who need to coordinate paying for a group.",
         githubLink: "https://github.com/WePays/WePay"
-
+    },
+    {
+      projectName: "Banana",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid, ducimus nulla voluptate, cum non doloribus quasi accusamus exercitationem optio natus amet eligendi magni quaerat cumque? Expedita, magnam est. Asperiores!",
+      githubLink: ""
     }
   ];
 
