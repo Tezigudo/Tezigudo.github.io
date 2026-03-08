@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftoppm -r 150 -png \"/Users/god/Desktop/work/Tezigudo.github.io/Preawpan CV_old.pdf\" /tmp/cv_page)",
+      "Read(//private/tmp/**)",
+      "Bash(ls \"/Users/god/Desktop/work/Tezigudo.github.io/\"*.odt)"
+    ]
+  }
+}

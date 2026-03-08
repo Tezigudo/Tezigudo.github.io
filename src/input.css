@@ -1,11 +1,93 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  /* Kimi no Na wa — night sky palette */
+  --color-night: #0a1628;
+  --color-sky: #1a3a5c;
+  --color-sky-light: #1e4d7a;
+  --color-comet: #7eceff;
+  --color-comet-purple: #c4b5fd;
+  --color-star: #e0f2fe;
+  --color-ember: #f97316;
+
+  /* Washi paper palette */
+  --color-washi: #f5f0e8;
+  --color-washi-dark: #ece4d8;
+  --color-washi-border: #d6c9b8;
+  --color-ink: #1a1a2e;
+  --color-ink-light: #2d2d4e;
+
+  /* Background images */
+  --background-image-tearmat: url('/image/tearmatt.jpg');
+
+  /* Custom fonts */
+  --font-family-mincho: 'A-OTF Futo Min A101 Pro Bold', 'KozMinPro-Bold', serif;
+}
 
 @font-face {
-  font-family: "A-OTF Futo Min A101 Pro Bold";
-  /* font-style: normal;
-        font-weight: 100 900;
-        font-display: swap; */
-  src: font-url("A-OTF-Futo-Min-A101-Pro-Bold.otf") format("opentype");
+  font-family: 'A-OTF Futo Min A101 Pro Bold';
+  src: url('/fonts/A-OTF Futo Min A101 Pro Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KozMinPro-Bold';
+  src: url('/fonts/KozMinPro-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+/* Washi paper texture — subtle fiber pattern via SVG noise */
+.washi-bg {
+  background-color: var(--color-washi);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeBlend in='SourceGraphic' mode='multiply' result='blend'/%3E%3CfeComposite in='blend' in2='SourceGraphic' operator='in'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.washi-dark-bg {
+  background-color: var(--color-washi-dark);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeBlend in='SourceGraphic' mode='multiply' result='blend'/%3E%3CfeComposite in='blend' in2='SourceGraphic' operator='in'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Comet shimmer animation for skill tags */
+@keyframes comet-shimmer {
+  0%, 100% { box-shadow: 0 0 8px 0 rgba(126, 206, 255, 0.3); }
+  50% { box-shadow: 0 0 16px 4px rgba(126, 206, 255, 0.6); }
+}
+
+/* Timeline connector */
+.timeline-line {
+  background: linear-gradient(to bottom, var(--color-comet), var(--color-comet-purple));
+}
+
+/* Glassmorphism nav */
+.glass-nav {
+  background: rgba(10, 22, 40, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(126, 206, 255, 0.15);
+}
+
+/* Comet gradient text */
+.comet-text {
+  background: linear-gradient(135deg, var(--color-comet), var(--color-comet-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Project card hover */
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(126, 206, 255, 0.1);
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(126, 206, 255, 0.2);
+}
+
+/* Experience timeline dot */
+.timeline-dot {
+  background: var(--color-comet);
+  box-shadow: 0 0 12px rgba(126, 206, 255, 0.8);
 }
